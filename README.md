@@ -1,6 +1,6 @@
 # canvas
 绘制图像
-```javascipt
+```javascript
 var drawing = document.getElementById("drawing");
         if(drawing.getContext){
             var ctx = drawing.getContext("2d");
