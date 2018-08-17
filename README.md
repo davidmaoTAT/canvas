@@ -92,3 +92,12 @@ var drawing = document.getElementById("drawing");
         var img = document.getElementById("myImg");
         ctx.drawImage(img,10,10,500,500);
 ```
+
+阴影
+```JavaScript
+
+            ctx.shadowOffsetX = 5;//x轴方向的偏移量
+            ctx.shadowOffsetY = 5;//y轴方向的偏移量
+            ctx.shadowBlur = 4;//模糊的像素值
+            ctx.shadowColor = "rgba(0,0,0,0.5)";//阴影颜色
+```
