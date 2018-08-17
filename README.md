@@ -17,3 +17,25 @@ var drawing = document.getElementById("drawing");
             ctx.clearRect(20,20,50,50);
         }
 ```
+
+```javascript
+ ctx.beginPath();
+
+            // 绘制外圆
+            ctx.arc(100,100,99,0,2*Math.PI,false);
+
+            // 绘制内圆
+            ctx.moveTo(194,100);
+            ctx.arc(100,100,94,0,2*Math.PI,false);
+
+            // 绘制分钟
+            ctx.moveTo(100,100);
+            ctx.lineTo(100,15);
+
+            // 绘制时钟
+            ctx.moveTo(100,100);
+            ctx.lineTo(35,100);
+
+            // 描边路径
+            ctx.stroke();
+```
