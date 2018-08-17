@@ -18,10 +18,10 @@ var drawing = document.getElementById("drawing");
             //清除一个矩形
             ctx.clearRect(20,20,50,50);
             }
-           ```
+```
            
 绘制路径：
-             ```javascript
+```javascript
               // 开始路径
         var drawing = document.getElementById("drawing");
         if(drawing.getContext){
@@ -45,8 +45,8 @@ var drawing = document.getElementById("drawing");
             // 描边路径
             ctx.stroke();
           ｝
-          
-          ```
+ 
+```
            
       
 
