@@ -15,11 +15,9 @@ var drawing = document.getElementById("drawing");
             ctx.strokeRect(80,80,50,50);
             //清除一个矩形
             ctx.clearRect(20,20,50,50);
-        }
-```
-
-```javascript
- ctx.beginPath();
+            
+            // 开始路径
+             ctx.beginPath();
 
             // 绘制外圆
             ctx.arc(100,100,99,0,2*Math.PI,false);
@@ -38,4 +36,7 @@ var drawing = document.getElementById("drawing");
 
             // 描边路径
             ctx.stroke();
+        }
 ```
+
+
