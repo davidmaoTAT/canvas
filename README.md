@@ -84,4 +84,11 @@ var drawing = document.getElementById("drawing");
       
 
 
-
+绘制图像
+```JavaScript
+//事先在html中用<img>元素插入图片
+var drawing = document.getElementById("drawing");
+        var ctx = drawing.getContext("2d");
+        var img = document.getElementById("myImg");
+        ctx.drawImage(img,10,10,500,500);
+```
