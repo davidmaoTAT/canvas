@@ -52,7 +52,35 @@ var drawing = document.getElementById("drawing");
           ｝
  
 ```
-           
+绘制文本：
+
+```JavaScript
+//绘制数字12
+ ctx.font = "bold 14px Arial";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText ("12",100,20);
+```
+
+变换：
+
+```JavaScript
+            ctx.fillStyle = "#ff0000";
+            ctx.save();//第一次调用save()，设置一个栈
+
+            ctx.fillStyle = "#00ff00";
+            ctx.translate(100,100);//移动原点
+            ctx.save();//第二次调用save()，设置第二一个栈
+
+            ctx.fillStyle = "#0000ff";
+            ctx.fillRect(0,0,100,100);//原点在（100，100）绘制蓝色矩形
+
+            ctx.restore();//调用restore()方法，栈结构向前返回一级
+            ctx.fillRect(10,10,100,100);//原点在（100，100）绘制绿色矩形
+
+            ctx.restore();//调用restore()方法，栈结构向前返回一级
+            ctx.fillRect(0,0,100,100);//原点在（0，0）绘制红色矩形
+```
       
 
 
