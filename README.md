@@ -44,6 +44,11 @@ var drawing = document.getElementById("drawing");
 
             // 描边路径
             ctx.stroke();
+            
+             // 判断一个点在不在路径上
+            if(ctx.isPointInPath(100,99)){
+                alert("yes");
+            }
           ｝
  
 ```
